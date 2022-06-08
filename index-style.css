@@ -1,0 +1,175 @@
+/* Общие стили */
+body {
+  background-color: #141313;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: 'Jost', sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #F25924;
+  margin: 0;
+  line-height: 1.2;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.header__container {
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*Стили header  */
+
+.main-logo {
+  margin-bottom: 40px;
+}
+
+.header__title {
+  max-width: 520px;
+}
+
+.radio-wrapper {
+  position: relative;
+}
+
+.text-o1 {
+  color: #F25924;
+}
+
+/* Контейнер подсказок */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+/* Текст подсказки */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 25em;
+  background-color: #555;
+  color: #fff;
+  text-transform: uppercase;
+  /* text-align: center; */
+  padding: 5px 3px;
+  border-radius: 6px;
+
+  /* Расположите текст подсказки */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -220px;
+  margin-bottom: 29px;
+
+  /* Исчезают в подсказке */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Подсказка стрелка */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Отображение текста подсказки при наведении курсора мыши на контейнер подсказки */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.faq-icon {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  cursor: pointer;
+}
+
+.radio-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  min-width: 210px;
+  position: relative;
+}
+
+
+.radio-item {
+  display: inline-block;
+  padding: 20px 20px;
+  font-size: 14px;
+  border: 3px solid #F25924;
+  border-radius: 5px;
+  width: 10em;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.5s ease-out;
+}
+
+.radio-item:hover {
+  background-color: #F25924;
+  font-size: 16px;
+}
+
+.radio-item_active {
+  background-color: #F25924;
+  font-size: 16px;
+  position: relative;
+}
+
+.radio-item_active:before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 10px;
+  left: -50px;
+  background: url("img/pause-button.svg") no-repeat;
+}
+
+/* стили discounts */
+
+.discounts__main {
+  height: fit-content;
+  margin-top: 20px;
+}
+
+.discounts__container {
+  justify-content: center;
+}
+
+.discounts__main .text-o1 {
+  max-width: 80vw;
+  padding: 30px;
+  font-size: 2em;
+  border: 1px solid #fff;
+}
