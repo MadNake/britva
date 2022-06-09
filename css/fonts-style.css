@@ -1,0 +1,21 @@
+
+@font-face {
+			font-family: 'Akzidenz-Grotesk Pro Bold Ext';
+			src: url('../fonts/AkzidenzGroteskPro/AkzidenzGroteskPro-BoldEx.ttf') format('truetype');
+		}
+
+		@font-face {
+			font-family: 'AkzidenzGroteskPro Md Ext';
+			src: url('../fonts/AkzidenzGroteskPro/AkzidenzGroteskPro-MdEx.ttf') format('truetype');
+		}
+		
+		@font-face {
+			font-family: 'Proxima Nova Rg';
+			src: url('../fonts/ProximaNova/ProximaNova-Regular.eot');
+			src: local('../Proxima Nova Regular'), local('ProximaNova-Regular'),
+				url('../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+				url('../fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+				url('../fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
