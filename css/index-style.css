@@ -17,6 +17,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #F25924;
   background-color: transparent;
 }
 
@@ -173,7 +174,7 @@ ul {
   border-radius: 100px;
   border: 6px solid transparent;
   background-clip: content-box;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.8);
 
 }
 
